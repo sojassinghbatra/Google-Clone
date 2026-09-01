@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> GOOGLE </title>
+        <style>
+            a:visited, a{
+                color : white;
+                text-decoration : none;
+            }
+            body{
+                margin : 0;
+                align-items : center;
+                display : flex;
+                flex-direction : column;
+                color : white;
+                background-color :oklab(25.44% 0.00253 -0.01492);
+                min-height : 100vh;
+            }
+            .about-section, .store-section, .gmail-section, .image-section{
+                display : inline-block;
+                margin : 0;
+                white-space : nowrap;
+            }
+            .about-section{
+                margin-left : 10px;
+            }
+            .nav-bar{
+                display : flex;
+                align-items : center;
+                justify-content : space-between;
+                width : 100%;
+                padding : 12px 20px;
+            }
+            .nav-group{
+                display : flex;
+                align-items : center;
+                gap : 16px;
+            }
+            .google{
+                text-align : center;
+                font-size : clamp(40px, 8vw, 60px);
+                margin : 24px 0;
+                white-space : nowrap;
+            }
+
+            .about-section:hover, .store-section:hover , .gmail-section:hover, .image-section:hover{
+                cursor : pointer;
+                text-decoration-line : underline;
+            }
+            
+            .search-box{
+                position : relative;
+                width : min(700px,90vw);
+            }
+
+            .search-box input{
+                width : 100%;
+                height : 45px;
+                border-radius : 25px;
+                padding : 0 44px 0 16px;
+                box-sizing : border-box;
+                border : 1px solid #5f6368;
+                background : transparent;
+                color : white;
+                outline : none;
+            }
+
+            .icons{
+               position: absolute;
+               right: 15px;
+               top: 50%;
+               transform: translateY(-50%);
+
+                display: flex;
+                align-items: center;
+                gap: 15px;
+            }
+
+            .icons img{
+                width : 22px;
+                height : 22px;
+            }
+
+            .buttons{
+                margin-top : 25px;
+                display : flex;
+                gap : 12px;
+                
+                
+            }
+            .search{
+                margin-right : 10px;
+                border-radius : 5px;
+                background-color : rgb(59, 51, 51);
+                color : white;
+                padding-top : 5px;
+                padding-bottom : 5px;
+                border : none;
+
+                
+            }
+            .lucky{
+                border-radius : 5px;
+                background-color : rgb(59, 51, 51);
+                color : white;
+                padding-top : 5px;
+                padding-bottom : 5px;
+                border : none;
+            }
+
+            .search:hover,.lucky:hover{
+                opacity : 0.7;
+                border: solid;
+                border-color : white;
+                border-width : 1px;
+            }
+            
+            .end{
+                margin-top : 50px;
+                width : 700px;
+                text-align : center;
+                font-size : 13px;
+                color : grey;
+            }
+            .ac{
+                color : rgb(153, 195, 255);
+
+            }
+            .photograph{
+                width : 22px;
+                height : 22px;
+                border-radius : 50px;
+                align-items : center;
+                margin-left : 5px;
+                
+
+            }
+
+            .footer{
+                margin-top : auto;
+                background-color : black;
+                color : white;
+                text-align : left;
+                width : 100%;
+            }
+            .canada{
+                margin : 0;
+                padding : 10px 24px;
+                border-bottom : 1px solid #333;
+            }
+            .footer-links{
+                display : flex;
+                gap : 20px;
+                padding : 10px 24px;
+            }
+            .Advertising, .Bussiness, .how-search{
+                margin : 0;
+                cursor : pointer;
+            }
+
+            
+
+
+
+        </style>
+    </head>
+    <body>
+        <header class="nav-bar">
+            <div class="nav-group">
+                <p class="about-section"><a href="https://about.google/?fg=1&utm_source=google-CA&utm_medium=referral&utm_campaign=hp-header" target="_blank"> About </a></p>
+                <p class="store-section"> Store </p>
+            </div>
+            <div class="nav-group">
+                <p class="gmail-section"> Gmail </p>
+                <p class="image-section"> Images </p>
+                <img class="photograph" src="images/Photograph.JPG">
+            </div>
+        </header>
+        <h1 class = "google"> Google </h1> 
+        <div class = "search-box">
+            <input class = "textbox" type="text">
+            <div class = "icons">
+                <img src ="images/mic.jpg" >
+                <img src = "images/image-search.png">
+                <img src = "images/search.jfif">
+
+            </div>
+             
+        </div>
+        <div class = "buttons">
+            <button class = "search"> Google search </button>
+            <button class = "lucky"> I'm Feeling Lucky </button>
+        </div>
+
+        <p class = "end"> Google offered in: <span class = "ac">Francais</span></p>
+        <footer class = "footer">
+            <p class = "canada"> Canada </p>
+            <div class = "footer-links">
+                <p class = "Advertising"> Advertising </p>
+                <p class = "Bussiness"> Bussiness </p>
+                <p class = "how-search"> How Search Works</p>
+            </div>
+        </footer>
+        
+    </body>
+</html>
