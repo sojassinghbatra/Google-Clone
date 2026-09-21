@@ -1,21 +1,35 @@
 # Google Clone
 
-A responsive Google-inspired search interface built from scratch practice frontend development, UI design, and interactive web functionality.
+A front-end recreation of the Google homepage built from scratch using HTML, CSS, and JavaScript.
 
-Features
-🔍 Search bar with interactive search functionality
-🏠 Google-inspired homepage layout
-📱 Responsive design for different screen sizes
-🎨 Clean and minimal user interface
-🔗 Navigation links and interactive elements
-⚡ Fast and lightweight frontend
+## Preview
 
-Technologies Used
-HTML5 — Page structure and semantic markup
-CSS3 — Styling, layout, and responsive design
-JavaScript — User interactions and functionality
+![Google Clone](google-replica-updated-version.png)
 
-Project Preview 
-Homepage
-<img width="1530" height="814" alt="image" src="https://github.com/user-attachments/assets/0db37969-587d-46f9-8f55-0ef71eb3fa94" />
+## Features
 
+- Google-inspired homepage layout
+- Search bar interface
+- Google Search and I'm Feeling Lucky buttons
+- Navigation links
+- Responsive page layout
+- Interactive elements using JavaScript
+- Clean and minimal user interface
+
+## Technologies
+
+- **HTML5** – Page structure and content
+- **CSS3** – Styling, layout, and responsive design
+- **JavaScript** – Interactive functionality
+
+## Project Structure
+
+```text
+Google-Clone/
+│
+├── google.html
+├── style.css
+├── script.js
+├── google-replica.png
+├── google-replica-updated-version.png
+└── README.md
