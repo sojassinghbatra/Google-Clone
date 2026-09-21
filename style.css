@@ -1,0 +1,178 @@
+.ac:visited, .ac{
+                color : rgb(153, 195, 255);
+
+            }
+            .ac
+            
+            b:visited, .b{
+                color : white;
+                text-decoration : none;
+            }
+            body{
+                margin : 0;
+                align-items : center;
+                display : flex;
+                flex-direction : column;
+                color : white;
+                background-color :oklab(25.44% 0.00253 -0.01492);
+                min-height : 100vh;
+            }
+            .about-section, .store-section, .gmail-section, .image-section{
+                display : inline-block;
+                margin : 0;
+                white-space : nowrap;
+            }
+            .about-section{
+                margin-left : 10px;
+            }
+            .nav-bar{
+                display : flex;
+                align-items : center;
+                justify-content : space-between;
+                width : 100%;
+                padding : 12px 20px;
+            }
+            .nav-group{
+                display : flex;
+                align-items : center;
+                gap : 16px;
+            }
+            .google{
+                text-align : center;
+                font-size : clamp(40px, 8vw, 60px);
+                margin : 24px 0;
+                white-space : nowrap;
+            }
+
+            .about-section:hover, .store-section:hover , .gmail-section:hover, .image-section:hover{
+                cursor : pointer;
+                text-decoration-line : underline;
+            }
+            
+            .search-box{
+                position : relative;
+                width : min(700px,90vw);
+            }
+
+            .search-box input{
+                width : 100%;
+                height : 45px;
+                border-radius : 25px;
+                padding : 0 44px 0 16px;
+                box-sizing : border-box;
+                border : 1px solid #5f6368;
+                background : transparent;
+                color : white;
+                outline : none;
+            }
+
+            .icons{
+               position: absolute;
+               right: 15px;
+               top: 50%;
+               transform: translateY(-50%);
+
+                display: flex;
+                align-items: center;
+                gap: 15px;
+            }
+
+            .icons img{
+                width : 22px;
+                height : 22px;
+            }
+
+            .buttons{
+                margin-top : 25px;
+                display : flex;
+                gap : 12px;
+                
+                
+            }
+            .search{
+                margin-right : 10px;
+                border-radius : 5px;
+                background-color : rgb(59, 51, 51);
+                color : white;
+                padding-top : 5px;
+                padding-bottom : 5px;
+                border : none;
+
+                
+            }
+            .lucky{
+                border-radius : 5px;
+                background-color : rgb(59, 51, 51);
+                color : white;
+                padding-top : 5px;
+                padding-bottom : 5px;
+                border : none;
+            }
+
+            .search:hover,.lucky:hover{
+                opacity : 0.7;
+                border: solid;
+                border-color : white;
+                border-width : 1px;
+            }
+            
+            .end{
+                margin-top : 50px;
+                width : 700px;
+                text-align : center;
+                font-size : 13px;
+                color : grey;
+            }
+            
+
+            
+            .photograph{
+                width : 22px;
+                height : 22px;
+                border-radius : 50px;
+                align-items : center;
+                margin-left : 5px;
+                
+
+            }
+
+            .footer{
+                margin-top : auto;
+                background-color : black;
+                color : white;
+                text-align : left;
+                width : 100%;
+            }
+            .canada{
+                margin : 0;
+                padding : 10px 24px;
+                border-bottom : 1px solid #333;
+            }
+            .footer-links{
+                display : flex;
+                gap : 20px;
+                padding : 10px 24px;
+            }
+            .Advertising, .Bussiness, .how-search{
+                margin : 0;
+                cursor : pointer;
+            }
+
+            #results {
+                width: min(700px, 90vw);
+                margin-top: 40px;
+            }
+
+            .result{
+                margin-bottom : 25px;
+            }
+
+            #result h2{
+                font-size : 20px;
+                margin-bottom : 5px;
+            }
+
+            #result p{
+                color : #b0b0b0;
+                line-height : 1.5px;
+            }
