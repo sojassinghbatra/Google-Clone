@@ -3,7 +3,13 @@
     <head>
         <title> GOOGLE </title>
         <style>
-            a:visited, a{
+            .ac:visited, .ac{
+                color : rgb(153, 195, 255);
+
+            }
+            .ac
+            
+            b:visited, .b{
                 color : white;
                 text-decoration : none;
             }
@@ -122,10 +128,9 @@
                 font-size : 13px;
                 color : grey;
             }
-            .ac{
-                color : rgb(153, 195, 255);
+            
 
-            }
+            
             .photograph{
                 width : 22px;
                 height : 22px;
@@ -158,6 +163,26 @@
                 cursor : pointer;
             }
 
+            #results {
+                width: min(700px, 90vw);
+                margin-top: 40px;
+            }
+
+            .result{
+                margin-bottom : 25px;
+            }
+
+            #result h2{
+                font-size : 20px;
+                margin-bottom : 5px;
+            }
+
+            #result p{
+                color : #b0b0b0;
+                line-height : 1.5px;
+            }
+            
+
             
 
 
@@ -167,18 +192,18 @@
     <body>
         <header class="nav-bar">
             <div class="nav-group">
-                <p class="about-section"><a href="https://about.google/?fg=1&utm_source=google-CA&utm_medium=referral&utm_campaign=hp-header" target="_blank"> About </a></p>
-                <p class="store-section"> Store </p>
+                <p class="about-section"><a class = "b" href="https://about.google/?fg=1&utm_source=google-CA&utm_medium=referral&utm_campaign=hp-header" target="_blank"> About </a></p>
+                <p class="store-section"><a class = "b" href="https://store.google.com/?hl=en-GB&srsltid=AU7gw4XtfMTziUtVlvKuSa4AvDKJDyNTUHjeYiaLoySVMupJqJAaC5hQ&pli=1" target = "_blank"> Store </a></p>
             </div>
             <div class="nav-group">
-                <p class="gmail-section"> Gmail </p>
+                <p class="gmail-section"><a class = "b" href="mailto:sojassinghbatra@gmail.com"> Gmail </a></p>
                 <p class="image-section"> Images </p>
                 <img class="photograph" src="images/Photograph.JPG">
             </div>
         </header>
         <h1 class = "google"> Google </h1> 
         <div class = "search-box">
-            <input class = "textbox" type="text">
+            <input id="searchInput" class = "textbox" type="text">
             <div class = "icons">
                 <img src ="images/mic.jpg" >
                 <img src = "images/image-search.png">
@@ -188,11 +213,13 @@
              
         </div>
         <div class = "buttons">
-            <button class = "search"> Google search </button>
+            <button id = "searchButton" class = "search"> Google search </button>
             <button class = "lucky"> I'm Feeling Lucky </button>
         </div>
 
-        <p class = "end"> Google offered in: <span class = "ac">Francais</span></p>
+        <div id="results"></div>
+
+        <p class = "end"> Google offered in: <span class = "ac"><a href= "https://fr.wikipedia.org/wiki/Fran%C3%A7ais" target = "_blank">Francais</span></a></p>
         <footer class = "footer">
             <p class = "canada"> Canada </p>
             <div class = "footer-links">
@@ -201,6 +228,7 @@
                 <p class = "how-search"> How Search Works</p>
             </div>
         </footer>
+    <script src="script.js"></script>
         
     </body>
 </html>
